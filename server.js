@@ -15,7 +15,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
     // ========================
     // Middlewares
     // ========================
-    app.set('view engine', 'ejs')
+    // app.set('view engine', 'ejs')
     app.use(bodyParser.urlencoded({ extended: true }))
     app.use(bodyParser.json())
     app.use(express.static('public'))
